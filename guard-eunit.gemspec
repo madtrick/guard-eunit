@@ -4,8 +4,8 @@ require File.expand_path('../lib/guard/eunit/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Misha Gorodnitzky"]
   gem.email         = ["misha@digital-science.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = 'Guard module to automatically run Erlang EUnit tests using rebar.'
+  gem.summary       = 'Guard module for EUnit tests.'
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
