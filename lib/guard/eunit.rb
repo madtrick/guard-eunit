@@ -25,10 +25,12 @@ module Guard
       else
         suites_output = "all suites"
       end
+      UI.info "*************************************", :reset => true
       UI.info "Running: #{cmd}", :reset => true
       output = `#{cmd}`
 
       if $? == 0
+        UI.info "Success"
         Notifier.notify(suites_output,
           :title => "EUnit Tests Passed",
           :image => :success
