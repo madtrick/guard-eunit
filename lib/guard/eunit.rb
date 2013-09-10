@@ -18,7 +18,7 @@ module Guard
     end
 
     def run_eunits(suites=[])
-      cmd = './rebar eunit skip_deps=true'
+      cmd = 'rebar eunit skip_deps=true'
       if !suites.empty?
         cmd += " suites=#{suites.join ','}"
         suites_output = suites.join ' '
